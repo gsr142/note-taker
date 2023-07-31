@@ -10,10 +10,21 @@ const existingNotes = require('./db/db.json')
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+
+// these requests come from the address bar
+// localhost:3001/
 app.get('/', (req, res) =>
     res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
+
+// localhost:3001/notes
+app.get('/notes', (req, res) => 
+    res.sendFile(path.join(__dirname, '/public/notes.html'))
+    );
+
+
+// these requests come from fetches
 app.get('/api/notes', (req, res) => {
     fs.readFile('./db/db.json', 'utf8', (err, data) => {
         if (err) {
