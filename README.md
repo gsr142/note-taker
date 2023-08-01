@@ -16,7 +16,8 @@
 A web application that allows the user to write and store notes. The notes are stored in a json file on a remote server.
 
 ## Installation
-No need to install. Just visit the site.
+No need to install. Just visit the site. [Click Here!](https://gsr142-note-taker-1ccdab72df67.herokuapp.com/)
+![screenshot](./public/assets/images/screenshot.png)
 
 ## Usage
 Click get started and begin taking notes. Save the notes by clicking
