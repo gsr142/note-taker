@@ -5,7 +5,7 @@ const fs = require('fs');
 // Set express App
 const app = express();
 const PORT = process.env.PORT || 3001;
-//const dbFilePath = path.join(__dirname, 'db', 'db.json');
+
 const existingNotes = require('./db/db.json')
 app.use(express.static('public'));
 app.use(express.json());
